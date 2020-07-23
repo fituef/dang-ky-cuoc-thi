@@ -38,16 +38,6 @@ function stepSetSinhVien() {
             return false;
         }
     }
-    var phone = $.trim($("input[name='txtPhone']").val());
-    if (phone == '') {
-        alert("VUI LÒNG NHẬP SỐ ĐIỆN THOẠI");
-        return false;
-    }
-    var lop = $.trim($("input[name='txtLop']").val());
-    if (lop == '') {
-        alert("VUI LÒNG NHẬP TÊN LỚP");
-        return false;
-    }
     doLoading()
         .then(doSetSinhVien)
         .then(doComplete);
