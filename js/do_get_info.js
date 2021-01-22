@@ -16,6 +16,13 @@ function stepSetSinhVien() {
     if (DN == '') {
         alert("VUI LÒNG CHỌN KHỐI THI");
         return false;
+    } 
+    if (DN == 'KHỐI THI GIẢI PHÁP CNTT & TMĐT') {
+        var tenDeTai = $.trim($("input[name='txtTenDeTai']").val());
+        if (tenDeTai == '') {
+            alert("VUI LÒNG NHẬP TÊN ĐỀ TÀI");
+            return false;
+        }
     }
     var masv = $.trim($("input[name='txtHoTen']").val());
     if (masv == '') {
