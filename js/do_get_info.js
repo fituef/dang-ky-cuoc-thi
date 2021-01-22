@@ -12,14 +12,14 @@ form.addEventListener("keyup", function(event) {
 });
 
 function stepSetSinhVien() {
-    var DN = $.trim($("select[name='txtDoanhNghiep']").val());
+    var DN = $.trim($("select[name='txtKhoiThi']").val());
     if (DN == '') {
-        alert("VUI LÒNG CHỌN DOANH NGHIỆP");
+        alert("VUI LÒNG CHỌN KHỐI THI");
         return false;
     }
     var masv = $.trim($("input[name='txtHoTen']").val());
     if (masv == '') {
-        alert("VUI LÒNG NHẬP HỌ VÀ TÊN SINH VIÊN");
+        alert("VUI LÒNG NHẬP HỌ VÀ TÊN TRƯỞNG NHÓM");
         return false;
     }
     var hoten = $.trim($("input[name='txtMaSV']").val());
